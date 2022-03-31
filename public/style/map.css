@@ -1,0 +1,123 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(197, 197, 197);
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(187, 187, 187);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.map-container {
+  background-color: rgb(255, 255, 255);
+  flex: 1 1 70%;
+}
+.flex-toggle {
+  flex: 00 00% !important;
+  /* display: none; */
+}
+.search-result-container {
+  background-color: rgb(255, 255, 255);
+  flex: 0 0 30%;
+  position: relative;
+  transition: 0.2s ease-out;
+  box-shadow: 4px -1px 12px 5px #0000002e;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.toggle-btn {
+  transition: 0.2s ease-in;
+  box-shadow: 13px 0 13px 0px #0000002e;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  width: 40px;
+  transform: translateX(100%);
+  border-radius: 0 5px 5px 0;
+  z-index: 100000;
+}
+.postion-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#map {
+  width: 100%;
+  height: 100%;
+}
+p {
+  font-size: 16px;
+
+  font-weight: 400;
+}
+h2 {
+  font-size: 28px;
+  color: #141414;
+  font-weight: 600;
+}
+h3 {
+  color: #696969;
+  font-size: 22px;
+
+  font-weight: 400;
+}
+span {
+  font-size: 200;
+  font-size: 12px;
+  color: #696969;
+}
+.search-container {
+  background-color: #f9f8f8;
+  padding: 20px;
+}
+.search-result {
+  height: 100%;
+  text-align: center;
+  padding: 30px 15px;
+}
+.result-box {
+  box-shadow: 0px 1px 7px #00000042;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  padding: 10px 20px;
+  margin: 20px auto;
+}
+.details {
+  margin-top: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #dedede5b;
+  height: max-content;
+  text-align: center;
+  gap: 8px;
+}
+.details > div {
+  align-self: center;
+}
